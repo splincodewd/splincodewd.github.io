@@ -1,5 +1,10 @@
          * {margin:0; padding:0;}
 
+         html, body {
+            width: 100%;
+            height: 100%;
+         }
+
         .clearfix:after {
           clear: both;
           content: ".";
@@ -12,10 +17,16 @@
             width: 1024px;
             color: #231f20;
             min-height: 300px;
-            padding-top: 210px;
+            
             height: auto;
             margin: 0 auto;
             background: url(../img/main.png) no-repeat 45px 30px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            height: 100%;
             
         }
 
@@ -122,13 +133,21 @@
             position: absolute;
             top: 70px;
             left: 354px;
+            width: calc(100% - 500px);
+        }
+
+        #info::after {
+            content: "SplincodeWD - сообщество на YouTube-каналe. Мы занимаемся популяризацией программирования для школьников и студентов вузов, если вам интересно подписывайтесь";
+            position: absolute;
+            top: 100px;
+            left: 0;
+            width: 100%;
+            font-size: 12px;
         }
 
         #source {
-                width: 220px;
                 height: auto;
                 display: flex;
-                justify-content: space-between;
                 margin: 12px 0 6px 0
             }
 
